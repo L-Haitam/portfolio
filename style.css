@@ -39,13 +39,13 @@
 
 /* ---- SCROLL PROGRESS BAR ---- */
 #scroll-progress {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 0%;
     height: 3px;
     background: linear-gradient(90deg, var(--primary), #fff);
-    z-index: 2000;
+    z-index: 10;
     transition: width 0.1s ease;
     box-shadow: 0 0 10px var(--primary-glow);
 }
@@ -142,29 +142,32 @@ body {
 /* ---- NAV ---- */
 header {
     position: fixed;
-    top: 20px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .nav-container {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 .glass-nav {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    padding: 0 5%;
+    height: var(--nav-height);
     background: var(--glass);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--border);
-    border-radius: 100px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
     transition: all 0.4s ease;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
 }
 
 .logo {
