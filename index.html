@@ -365,10 +365,16 @@
                         homelab and mock auditing documents.</p>
                 </div>
 
+                <div class="portfolio-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="veripulse">VeriPulse</button>
+                    <button class="filter-btn" data-filter="homelab">Homelab Environment</button>
+                </div>
+
                 <div class="portfolio-grid-v3">
                     <!-- Project 01: NIS2 Gap Analysis -->
                     <a id="nis2-report" href="NIS2_Gap_Analysis.pdf" target="_blank"
-                        class="portfolio-card-v3 glass reveal featured-highlight">
+                        class="portfolio-card-v3 glass reveal featured-highlight" data-category="veripulse">
                         <div class="card-thumbnail-v3 image-fill">
                             <img src="NIS2_Gap_Analysis_thumbnail.png" alt="NIS2 Gap Analysis" class="thumbnail-img">
                             <div class="featured-badge">NEW</div>
@@ -406,15 +412,73 @@
                         </div>
                     </a>
 
-                    <!-- Project 02: Executive Summary -->
+                    <!-- Project 02: GDPR Article 32 -->
+                    <div class="portfolio-card-v3 glass reveal" data-category="veripulse"
+                        style="transition-delay: 0.1s; cursor: not-allowed; border: 1px dashed rgba(255, 204, 0, 0.4); box-shadow: inset 0 0 20px rgba(255, 204, 0, 0.05);">
+                        <div class="card-thumbnail-v3 image-fill" style="position: relative;">
+                            <img src="gdpr_article32.png" alt="GDPR Article 32" class="thumbnail-img"
+                                style="filter: grayscale(60%) sepia(30%) blur(1px); opacity: 0.5;">
+                            <div class="featured-badge"
+                                style="background: rgba(255, 204, 0, 0.15); color: #ffe100; border: 1px solid rgba(255, 204, 0, 0.4); backdrop-filter: blur(8px); font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                    </path>
+                                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                UNDER CONSTRUCTION
+                            </div>
+                        </div>
+                        <div class="card-info-v3" style="opacity: 0.85;">
+                            <div class="card-meta">
+                                <div class="p-num-v3" style="color: rgba(255, 204, 0, 0.8);">02</div>
+                                <div class="card-type" style="color: rgba(255, 204, 0, 0.6);">// SECURITY ASSESSMENT
+                                </div>
+                                <div class="card-badge veripulse-badge">VeriPulse</div>
+                            </div>
+                            <h3>Security Assessment & Data Protection Review<br><span
+                                    style="font-size: 0.85em; opacity: 0.9;">GDPR ARTICLE 32 - VeriPulse B.V.</span>
+                            </h3>
+                            <p>An upcoming comprehensive security assessment and data protection review evaluating
+                                technical and organizational measures under GDPR Article 32.</p>
+                            <div class="card-tags">
+                                <span
+                                    style="border-color: rgba(255, 204, 0, 0.2); color: rgba(255, 204, 0, 0.8);">GDPR</span>
+                                <span
+                                    style="border-color: rgba(255, 204, 0, 0.2); color: rgba(255, 204, 0, 0.8);">Article
+                                    32</span>
+                                <span style="border-color: rgba(255, 204, 0, 0.2); color: rgba(255, 204, 0, 0.8);">Data
+                                    Protection</span>
+                            </div>
+                            <div class="card-footer-v3" style="opacity: 0.7;">
+                                <span class="read-time" style="color: #ffcc00;"><svg width="14" height="14"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg> Coming Soon</span>
+                                <span class="view-btn" style="color: rgba(255, 255, 255, 0.5);">
+                                    Work in Progress
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 03: Executive Summary -->
                     <a href="Executive_Summary.pdf" target="_blank" class="portfolio-card-v3 glass reveal"
-                        style="transition-delay: 0.1s;">
+                        data-category="homelab" style="transition-delay: 0.2s;">
                         <div class="card-thumbnail-v3 image-fill">
                             <img src="executive_summary_thumbnail.png" alt="Executive Summary" class="thumbnail-img">
                         </div>
                         <div class="card-info-v3">
                             <div class="card-meta">
-                                <div class="p-num-v3">02</div>
+                                <div class="p-num-v3">03</div>
                                 <div class="card-type">// EXECUTIVE BRIEF</div>
                                 <div class="card-badge">Homelab</div>
                             </div>
@@ -443,15 +507,15 @@
                         </div>
                     </a>
 
-                    <!-- Project 03: Gap Analysis -->
+                    <!-- Project 04: Gap Analysis -->
                     <a href="Information_Security_Gap_Analysis_Report.pdf" target="_blank"
-                        class="portfolio-card-v3 glass reveal" style="transition-delay: 0.2s;">
+                        class="portfolio-card-v3 glass reveal" data-category="homelab" style="transition-delay: 0.3s;">
                         <div class="card-thumbnail-v3 image-fill">
                             <img src="gap_analysis_thumbnail.png" alt="Gap Analysis Report" class="thumbnail-img">
                         </div>
                         <div class="card-info-v3">
                             <div class="card-meta">
-                                <div class="p-num-v3">03</div>
+                                <div class="p-num-v3">04</div>
                                 <div class="card-type">// GAP ANALYSIS</div>
                                 <div class="card-badge">Homelab</div>
                             </div>
@@ -482,16 +546,16 @@
                         </div>
                     </a>
 
-                    <!-- Project 04: Technical Detection -->
+                    <!-- Project 05: Technical Detection -->
                     <a href="Technical_Detection_Report.pdf" target="_blank" class="portfolio-card-v3 glass reveal"
-                        style="transition-delay: 0.3s;">
+                        data-category="homelab" style="transition-delay: 0.4s;">
                         <div class="card-thumbnail-v3 image-fill">
                             <img src="technical_detection_thumbnail.png" alt="Technical Detection Report"
                                 class="thumbnail-img">
                         </div>
                         <div class="card-info-v3">
                             <div class="card-meta">
-                                <div class="p-num-v3">04</div>
+                                <div class="p-num-v3">05</div>
                                 <div class="card-type">// ATTACK SIMULATIONS</div>
                                 <div class="card-badge">Homelab</div>
                             </div>
@@ -684,6 +748,33 @@
                     const y = e.clientY - rect.top;
                     card.style.setProperty('--mouse-x', `${x}px`);
                     card.style.setProperty('--mouse-y', `${y}px`);
+                });
+            });
+
+            // Portfolio Filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card-v3');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    portfolioCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.classList.remove('hide-item');
+                        } else {
+                            if (card.getAttribute('data-category') === filterValue) {
+                                card.classList.remove('hide-item');
+                            } else {
+                                card.classList.add('hide-item');
+                            }
+                        }
+                    });
                 });
             });
 

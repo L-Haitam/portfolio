@@ -325,8 +325,17 @@ header {
 }
 
 @keyframes simple-pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.4); opacity: 0.5; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
 }
 
 .welcome-message {
@@ -423,20 +432,26 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.1),
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.1),
+            transparent);
     transition: 0.5s;
     animation: shimmer 4s infinite;
 }
 
 @keyframes shimmer {
-    0% { left: -100%; }
-    20% { left: 100%; }
-    100% { left: 100%; }
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
 }
 
 .hero-spotlight:hover {
@@ -469,9 +484,17 @@ header {
 }
 
 @keyframes pulse-dark {
-    0% { opacity: 1; }
-    50% { opacity: 0.4; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .spotlight-text {
@@ -1038,7 +1061,8 @@ header {
     top: 50%;
     left: calc(100% + 15px);
     transform: translateY(-50%) translateX(-10px);
-    background: #0d111b; /* Matches var(--bg-slate) */
+    background: #0d111b;
+    /* Matches var(--bg-slate) */
     color: var(--text-white);
     padding: 12px 18px;
     border-radius: 14px;
@@ -1092,6 +1116,45 @@ header {
 }
 
 /* ---- PORTFOLIO V3: STRATEGIC REPOSITORY ---- */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid var(--border);
+    color: var(--text-slate);
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.filter-btn:hover {
+    border-color: var(--primary-glow);
+    color: var(--text-white);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.filter-btn.active {
+    background: var(--primary-muted);
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.portfolio-card-v3.hide-item {
+    display: none !important;
+}
 .portfolio-grid-v3 {
     display: flex;
     flex-direction: column;
@@ -1266,12 +1329,29 @@ header {
     opacity: 0.4;
 }
 
-.w-30 { width: 30%; }
-.w-40 { width: 40%; }
-.w-50 { width: 50%; }
-.w-60 { width: 60%; }
-.w-70 { width: 70%; }
-.w-80 { width: 80%; }
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
 
 /* Card Info */
 .card-info-v3 {
@@ -1679,7 +1759,7 @@ header {
         padding: 50px 30px;
         width: 320px;
     }
-    
+
     .card-info-v3 {
         padding: 40px;
     }
@@ -1821,6 +1901,7 @@ header {
         border-color: var(--primary-glow);
         box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
     }
+
     100% {
         border-color: var(--primary);
         box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
@@ -1844,9 +1925,17 @@ header {
 }
 
 @keyframes badge-float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .featured-highlight .p-num-v3 {
