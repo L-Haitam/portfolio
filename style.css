@@ -221,6 +221,52 @@ header {
     box-shadow: 0 8px 25px var(--primary-glow);
 }
 
+/* Mobile Menu Toggle button */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+}
+
+.mobile-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-white);
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Scrolled Header State */
+header.scrolled .glass-nav {
+    height: 60px;
+    background: var(--glass-heavy);
+    border-bottom-color: var(--border-bright);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Active Nav Links for Scroll-Spy */
+.nav-links a.active {
+    color: var(--primary) !important;
+    position: relative;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary-glow);
+    border-radius: 2px;
+}
+
 /* ---- HERO ---- */
 .hero {
     height: 100vh;
@@ -1888,6 +1934,60 @@ header {
     .section-padding {
         padding: 100px 0;
     }
+
+    /* Mobile Nav Adjustments */
+    .glass-nav {
+        justify-content: space-between;
+    }
+
+    .mobile-toggle {
+        display: flex;
+    }
+
+    .mobile-toggle.open span:first-child {
+        transform: translateY(7px) rotate(45deg);
+        background-color: var(--primary);
+    }
+
+    .mobile-toggle.open span:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+        background-color: var(--primary);
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--glass-heavy);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 100px 40px;
+        border-left: 1px solid var(--border);
+        transition: right 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 1050;
+        box-shadow: -20px 0 50px rgba(0, 0, 0, 0.8);
+        margin: 0;
+    }
+
+    .nav-links.open {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+
+    .nav-cta {
+        display: none;
+    }
 }
 
 /* ---- EASTER EGG ---- */
@@ -1973,4 +2073,76 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* ---- UNDER CONSTRUCTION UTILITY ---- */
+.portfolio-card-v3.under-construction {
+    cursor: not-allowed;
+    border: 1px dashed rgba(255, 204, 0, 0.4);
+    box-shadow: inset 0 0 20px rgba(255, 204, 0, 0.05);
+}
+
+.portfolio-card-v3.under-construction:hover {
+    transform: none !important;
+    border-color: rgba(255, 204, 0, 0.6) !important;
+    box-shadow: inset 0 0 20px rgba(255, 204, 0, 0.1), 0 0 20px rgba(255, 204, 0, 0.05) !important;
+}
+
+.under-construction .thumbnail-img {
+    filter: grayscale(60%) sepia(30%) blur(1px);
+    opacity: 0.5;
+}
+
+.under-construction .featured-badge {
+    background: rgba(255, 204, 0, 0.15);
+    color: #ffe100;
+    border: 1px solid rgba(255, 204, 0, 0.4);
+    backdrop-filter: blur(8px);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    animation: none; /* Turn off float animation for under construction */
+}
+
+.under-construction .card-info-v3 {
+    opacity: 0.85;
+}
+
+.under-construction .p-num-v3 {
+    color: rgba(255, 204, 0, 0.8) !important;
+    opacity: 0.8;
+}
+
+.under-construction .card-type {
+    color: rgba(255, 204, 0, 0.6);
+    background: rgba(255, 204, 0, 0.05);
+}
+
+.card-info-v3 h3 span {
+    font-size: 0.85em;
+    opacity: 0.9;
+}
+
+.under-construction .card-tags span {
+    border-color: rgba(255, 204, 0, 0.2);
+    color: rgba(255, 204, 0, 0.8);
+}
+
+.under-construction .card-footer-v3 {
+    opacity: 0.7;
+}
+
+.under-construction .read-time {
+    color: #ffcc00;
+    opacity: 1;
+}
+
+.under-construction .view-btn {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.under-construction:hover .view-btn {
+    color: rgba(255, 255, 255, 0.7);
+    gap: 10px;
 }
