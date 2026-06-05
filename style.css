@@ -1067,6 +1067,10 @@ header.scrolled .glass-nav {
     position: relative;
 }
 
+section[id] {
+    scroll-margin-top: calc(var(--nav-height) + 20px);
+}
+
 /* ---- SECTION TRANSITIONS ---- */
 .section-transition {
     position: absolute;
@@ -1742,6 +1746,7 @@ header.scrolled .glass-nav {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
 }
 
 .reveal.visible,
@@ -2075,74 +2080,7 @@ header.scrolled .glass-nav {
     -webkit-text-fill-color: transparent;
 }
 
-/* ---- UNDER CONSTRUCTION UTILITY ---- */
-.portfolio-card-v3.under-construction {
-    cursor: not-allowed;
-    border: 1px dashed rgba(255, 204, 0, 0.4);
-    box-shadow: inset 0 0 20px rgba(255, 204, 0, 0.05);
-}
-
-.portfolio-card-v3.under-construction:hover {
-    transform: none !important;
-    border-color: rgba(255, 204, 0, 0.6) !important;
-    box-shadow: inset 0 0 20px rgba(255, 204, 0, 0.1), 0 0 20px rgba(255, 204, 0, 0.05) !important;
-}
-
-.under-construction .thumbnail-img {
-    filter: grayscale(60%) sepia(30%) blur(1px);
-    opacity: 0.5;
-}
-
-.under-construction .featured-badge {
-    background: rgba(255, 204, 0, 0.15);
-    color: #ffe100;
-    border: 1px solid rgba(255, 204, 0, 0.4);
-    backdrop-filter: blur(8px);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    animation: none; /* Turn off float animation for under construction */
-}
-
-.under-construction .card-info-v3 {
-    opacity: 0.85;
-}
-
-.under-construction .p-num-v3 {
-    color: rgba(255, 204, 0, 0.8) !important;
-    opacity: 0.8;
-}
-
-.under-construction .card-type {
-    color: rgba(255, 204, 0, 0.6);
-    background: rgba(255, 204, 0, 0.05);
-}
-
 .card-info-v3 h3 span {
     font-size: 0.85em;
     opacity: 0.9;
-}
-
-.under-construction .card-tags span {
-    border-color: rgba(255, 204, 0, 0.2);
-    color: rgba(255, 204, 0, 0.8);
-}
-
-.under-construction .card-footer-v3 {
-    opacity: 0.7;
-}
-
-.under-construction .read-time {
-    color: #ffcc00;
-    opacity: 1;
-}
-
-.under-construction .view-btn {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.under-construction:hover .view-btn {
-    color: rgba(255, 255, 255, 0.7);
-    gap: 10px;
 }
