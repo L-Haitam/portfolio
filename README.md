@@ -1,36 +1,30 @@
-# Cloud-Native SIEM & GRC Framework Alignment (Wazuh & Azure)
+# Haitam — personal website redesign, v2
 
-## 📌 Project Overview
-This project demonstrates the design and deployment of a scalable, cloud-native **Security Information and Event Management (SIEM)** architecture. The primary objective was to bridge the gap between decentralized endpoint telemetry and centralized governance by simulating real-world regulatory requirements. 
+A standalone redesign of Haitam Laafar’s personal site, built with HTML, CSS, and a small amount of JavaScript. The introduction brings together language, education, research, and technology. Existing security work remains available as projects, rather than defining the whole site.
 
-The environment serves as a functional proof-of-concept for **Continuous Monitoring** and **Log Integrity** as mandated by international and national frameworks.
+This independent version uses warm off-white, dark ink, and a quiet green accent. The landing page has a straightforward personal introduction, clear links, and a subtle contour-line background. It uses normal-scale typography and natural section heights, with no profile summary box. The rest of the site retains v1’s content and layout, with a matching green contact section. There is no photo or decorative star motif.
 
-## Architecture
-* **Core SIEM:** Wazuh Manager hosted on an **Ubuntu 22.04 LTS** Azure Virtual Machine.
-* **Monitored Endpoints:** Hybrid telemetry from a local **Windows 10** host and a **Windows Subsystem for Linux (WSL)** instance.
-* **Security Layer:** All agent communication is secured via **AES-256 encryption**.
-* **Network Governance:** Access is managed through refined **Azure Network Security Group (NSG)** rules, strictly enforcing the **Principle of Least Privilege** through source IP whitelisting.
+The preserved v1 is in `../portfolio-redesign/`. This folder has its own assets and documents; it does not depend on v1 to run. Final verification notes are in `FINAL_REVIEW.md`.
 
-## Technical Validation & Detection
-The environment was subjected to live attack simulations to validate its defensive posture:
-* **Credential-Based Attacks:** Validated real-time detection of brute-force and unauthorized sudo attempts (NIST AC-7 / AU-14).
-* **File Integrity Monitoring (FIM):** Automated detection of unauthorized changes to critical system paths (/etc, /bin) using cryptographic hash verification.
-* **Custom Rule Engineering:** Authored custom detection rules (Rule ID: 100001) to identify attacker persistence via new account creation.
+## Preview
 
-## Governance, Risk, and Compliance (GRC)
-A core component of this project is a comprehensive **Gap Analysis** evaluating the environment against three key frameworks:
-1.  **NIST SP 800-53 Rev. 5:** Focusing on Audit, Accountability, and Identification.
-2.  **ISO/IEC 27001:2022:** Mapping technological controls to organizational security themes.
-3.  **Morocco’s Loi 05-20:** Aligning with national cybersecurity obligations for infrastructure monitoring and incident notification.
+Open `index.html` directly in a browser, or serve this directory:
 
-## Risk Management & Remediation
-Beyond detection, the project includes a risk-based **Consolidated Risk Register** and **Remediation Roadmap**:
-* **Risk Register:** Documents highest-priority gaps, including missing IS policies and unencrypted local logs.
-* **Roadmap:** Prioritizes high-impact governance tasks—such as drafting a formal **Information Security Policy** and configuring **automated backups**—to move the environment toward full compliance.
+```powershell
+python -m http.server 4174 --bind 127.0.0.1
+```
 
----
+Then visit http://127.0.0.1:4174. No package installation or build step is needed. Email copying appears when the browser supports secure clipboard access; the email link always works.
 
-### Documentation Included
-* **Executive Summary:** High-level architectural and objective overview.
-* **Technical Detection Report:** Live testing methodology and forensic evidence.
-* **Gap Analysis Report:** Compliance assessment, risk register, and strategic roadmap.
+## Files
+
+- `index.html`: all text, education, credentials, contact links, and project links.
+- `style.css`: responsive layout, colors, and typography.
+- `landing-v2.css`: the v2 introduction, green accent, and responsive rules.
+- `script.js`: mobile navigation, project filters, email copying, and section indicators.
+- `assets/`: favicon, local typeface, and decorative contour-line SVG.
+- `documents/`: independent copies of all five original PDF reports.
+
+The Newsreader font was copied from the existing `portfolio v3/assets` directory. Report files were copied from the original portfolio root. There are no external font, script, or image dependencies. All page illustrations are SVG or CSS. Newsreader is licensed under the SIL Open Font License; see `assets/fonts/OFL.txt`.
+
+All work is contained in this new directory. The original files and `portfolio pb` have not been edited. Nothing has been deployed.

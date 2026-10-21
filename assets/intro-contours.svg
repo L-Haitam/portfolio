@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="edge-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset=".12" stop-color="white"/>
+      <stop offset=".82" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="soft-edges"><rect width="1200" height="640" fill="url(#edge-fade)"/></mask>
+  </defs>
+  <g stroke="#8fa486" stroke-opacity=".42" stroke-width="1" mask="url(#soft-edges)">
+    <path d="M706-100C1131-5 631 151 868 319S1164 570 752 740"/>
+    <path d="M744-100C1169-5 669 151 906 319S1202 570 790 740"/>
+    <path d="M782-100C1207-5 707 151 944 319S1240 570 828 740"/>
+    <path d="M820-100C1245-5 745 151 982 319S1278 570 866 740"/>
+    <path d="M858-100C1283-5 783 151 1020 319S1316 570 904 740"/>
+    <path d="M896-100C1321-5 821 151 1058 319S1354 570 942 740"/>
+    <path d="M934-100C1359-5 859 151 1096 319S1392 570 980 740"/>
+    <path d="M972-100C1397-5 897 151 1134 319S1430 570 1018 740"/>
+    <path d="M1010-100C1435-5 935 151 1172 319S1468 570 1056 740"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "direction": "Personal introduction with subtle contour background",
+  "viewportWidthsChecked": [
+    320,
+    390,
+    540,
+    700,
+    701,
+    768,
+    900,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "checks": [
+    "Profile summary removed",
+    "No horizontal overflow at the checked widths",
+    "Background SVG loads",
+    "Local font loads without a preload CORS error"
+  ],
+  "fonts": [
+    {
+      "family": "Newsreader",
+      "status": "loaded"
+    }
+  ],
+  "errors": []
+}

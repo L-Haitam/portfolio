@@ -1,0 +1,152 @@
+{
+  "responsive": [
+    {
+      "width": 320,
+      "content": 320,
+      "backgroundWidth": 320,
+      "dividerAligned": true
+    },
+    {
+      "width": 360,
+      "content": 360,
+      "backgroundWidth": 360,
+      "dividerAligned": true
+    },
+    {
+      "width": 390,
+      "content": 390,
+      "backgroundWidth": 390,
+      "dividerAligned": true
+    },
+    {
+      "width": 540,
+      "content": 540,
+      "backgroundWidth": 540,
+      "dividerAligned": true
+    },
+    {
+      "width": 700,
+      "content": 700,
+      "backgroundWidth": 700,
+      "dividerAligned": true
+    },
+    {
+      "width": 701,
+      "content": 701,
+      "backgroundWidth": 701,
+      "dividerAligned": true
+    },
+    {
+      "width": 768,
+      "content": 768,
+      "backgroundWidth": 768,
+      "dividerAligned": true
+    },
+    {
+      "width": 900,
+      "content": 900,
+      "backgroundWidth": 900,
+      "dividerAligned": true
+    },
+    {
+      "width": 1024,
+      "content": 1024,
+      "backgroundWidth": 1024,
+      "dividerAligned": true
+    },
+    {
+      "width": 1085,
+      "content": 1085,
+      "backgroundWidth": 1085,
+      "dividerAligned": true
+    },
+    {
+      "width": 1280,
+      "content": 1280,
+      "backgroundWidth": 1280,
+      "dividerAligned": true
+    },
+    {
+      "width": 1440,
+      "content": 1440,
+      "backgroundWidth": 1440,
+      "dividerAligned": true
+    },
+    {
+      "width": 1920,
+      "content": 1920,
+      "backgroundWidth": 1920,
+      "dividerAligned": true
+    }
+  ],
+  "navigation": [
+    {
+      "hash": "#about",
+      "active": "#about"
+    },
+    {
+      "hash": "#work",
+      "active": "#work"
+    },
+    {
+      "hash": "#background",
+      "active": "#background"
+    },
+    {
+      "hash": "#contact",
+      "active": "#contact"
+    }
+  ],
+  "checks": [
+    "HTTP preview",
+    "Direct file preview",
+    "Email copy",
+    "All project filters",
+    "Native details disclosure",
+    "Five PDF files",
+    "Keyboard skip link",
+    "Mobile menu and Escape focus",
+    "No-JavaScript fallback",
+    "Active navigation follows the short contact section at page end",
+    "Direct contact fragment and mobile navigation after the fix"
+  ],
+  "errors": [],
+  "externalLinks": [
+    {
+      "url": "https://www.linkedin.com/in/haitam-laafar-119247346/",
+      "status": 999,
+      "finalURL": "https://www.linkedin.com/in/haitam-laafar-119247346"
+    },
+    {
+      "url": "https://github.com/L-Haitam",
+      "status": 200,
+      "finalURL": "https://github.com/L-Haitam"
+    },
+    {
+      "url": "https://www.coursera.org/account/accomplishments/specialization/RYYEJN3TKDOS",
+      "status": 200,
+      "finalURL": "https://www.coursera.org/account/accomplishments/specialization/RYYEJN3TKDOS"
+    },
+    {
+      "url": "https://www.coursera.org/account/accomplishments/records/S4LA1KJFL3Q3",
+      "status": 200,
+      "finalURL": "https://www.coursera.org/account/accomplishments/verify/S4LA1KJFL3Q3"
+    },
+    {
+      "url": "https://www.skillfront.com/Badges/89952543663315",
+      "status": 200,
+      "finalURL": "https://www.skillfront.com/Badges/89952543663315"
+    },
+    {
+      "url": "https://coursera.org/share/47fa1aa35c4be2e74d9fe73ddba61e23",
+      "status": 200,
+      "finalURL": "https://www.coursera.org/account/accomplishments/specialization/YL76HBS5K1VD?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+    },
+    {
+      "url": "https://jobintech.academy/",
+      "status": 200,
+      "finalURL": "https://jobintech.academy/"
+    }
+  ],
+  "status": "All local checks passed; LinkedIn blocks automated status checks with HTTP 999"
+}
